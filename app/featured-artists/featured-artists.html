@@ -1,0 +1,7 @@
+<div class="container">
+    <h1 class="my-1 text-center">Nuestros artistas</h1>
+    <div class="row my-1" ng-if="$index % 2 == 0"  ng-repeat="item in featured_artists">
+        <artist class="col-xs-12 col-md-6" data="{{featured_artists[$index]}}"></artist>
+        <artist class="col-xs-12 col-md-6" data="{{featured_artists[$index+1]}}" ng-if="featured_artists.length > ($index + 1)"></artist>
+    </div>
+</div>

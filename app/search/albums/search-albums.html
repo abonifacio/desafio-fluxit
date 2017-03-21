@@ -1,0 +1,12 @@
+<table class="table">
+    <tr>
+        <th>Artista</th>
+        <th>Album</th>
+        <th>Tipo de Album</th>
+    </tr>
+    <tr ng-repeat="album in results.items">
+        <td>{{getArtists(album.artists)}}</td>
+        <td>{{album.name}}</td>
+        <td class="text-capitalize">{{album.album_type}}</td>
+    </tr>
+</table>

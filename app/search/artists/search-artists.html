@@ -1,0 +1,12 @@
+<table class="table">
+    <tr>
+        <th>Artista</th>
+        <th>Géneros</th>
+        <th>Popularidad</th>
+    </tr>
+    <tr ng-repeat="artist in results.items">
+        <td><a ui-sref="artist.top-tracks({id: artist.id})" >{{artist.name}}</a></td>
+        <td>{{artist.genres.join(',')}}</td>
+        <td>{{artist.popularity}}</td>
+    </tr>
+</table>

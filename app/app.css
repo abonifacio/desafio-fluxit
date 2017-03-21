@@ -1,0 +1,89 @@
+
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.img-rounded{
+  max-width: 200px;
+  max-height: 160px;
+}
+
+.my-1{
+  margin-top:16px;
+  margin-bottom:16px;
+}
+
+.alert-danger{
+  border: 0;
+  background: #f2dede;
+}
+
+.danger{
+  background: rgb(169, 68, 66);
+  color:#fff;
+}
+
+.primary{
+  background:  #32BA9F;
+  color: #fff !important;
+  border-radius: 0;
+  border:none;
+}
+
+
+a{
+  color: #32BA9F !important;
+}
+
+.btn {
+    padding: .85rem 2.13rem;
+    border-radius: 2px;
+    border: 0;
+    color: #fff !important;
+    margin: 6px;
+    white-space: normal !important;
+    word-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #32BA9F;
+}
+
+.btn-primary:hover{
+  background: #2EC7B8;
+}
+
+
+.btn-default {
+    background: #f0f0f0;
+    color: #32BA9F !important;
+}
+
+.btn-default:hover{
+    background: #e8e8e8;
+}
+
+
+.table-icons{
+  display: inline-block;
+}
+
+.table-icons td{
+  padding: 5px;
+}
+
+.nav-pills .active a,.nav-pills .active a:focus,.list-group-item.active{
+  background:#32BA9F !important;
+  color: #fff !important;
+  text-shadow: none !important;
+  border:none;
+}
+
+.panel-default > .panel-heading{
+  background: none;
+}
+
+/*VERDER*/
+/*color: #32BA9F*/ 

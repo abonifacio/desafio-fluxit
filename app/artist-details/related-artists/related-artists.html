@@ -1,0 +1,4 @@
+<div class="row" ng-if="$index % 2 == 0"  ng-repeat="item in relatedArtists">
+    <artist class="col-xs-12 col-md-6" data="{{relatedArtists[$index]}}"></artist>
+    <artist class="col-xs-12 col-md-6" data="{{relatedArtists[$index+1]}}" ng-if="relatedArtists.length > ($index + 1)"></artist>
+</div>

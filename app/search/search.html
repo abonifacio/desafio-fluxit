@@ -1,0 +1,14 @@
+<h1 class="text-center">Buscando {{ searchParams.buscar}}</h1>
+
+<h3 class="text-center"> {{ searchParams.total }} resultados</h3>
+
+
+<div class="table-responsive" ui-view="search-results"></div>
+
+
+<nav aria-label="...">
+  <ul class="pager">
+    <li class="previous"><a class="cursor-pointer" ng-if="searchParams.prev" ng-click="goPrev()"><span aria-hidden="true">&larr;</span> Anterior</a></li>
+    <li class="next"><a class="cursor-pointer" ng-if="searchParams.next" ng-click="goNext()">Siguiente <span aria-hidden="true">&rarr;</span></a></li>
+  </ul>
+</nav>

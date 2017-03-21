@@ -1,0 +1,18 @@
+<div class="row vcenter-parent my-1">
+    <div class="col-xs-6 vcenter-child">
+        <img class="img-responsive img-rounded center-block" src="{{artist.images[artist.images.length-2].url}}" alt="{{artist.name}}">
+    </div>
+    <div class="col-xs-6 text-left vcenter-child">
+        <h3>{{artist.name}}</h3>
+        <p>Popularidad: {{artist.popularity}}</p>
+        <p>Seguidores: {{artist.followers.total}}</p>
+    </div>
+</div>
+<ul class="nav nav-pills nav-justified my-1">
+  <li role="presentation" ui-sref-active="active"><a ui-sref="artist.top-tracks({id: artist.id})">Top Canciones</a></li>
+  <li role="presentation" ui-sref-active="active"><a ui-sref="artist.related-artists({id: artist.id})">Artistas Relacionados</a></li>
+  <li role="presentation" ui-sref-active="active"><a ui-sref="artist.albums({id: artist.id})">Albumes</a></li>
+</ul>
+<div ui-view="artist-tab">
+
+</div>

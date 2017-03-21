@@ -1,0 +1,53 @@
+<div class="row">
+
+    <div class="panel panel-default col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="panel-body">
+
+            <div class="row ">    
+                <div class="col-xs-12 col-sm-7">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img class="media-object" src="{{artist.images[artist.images.length-1].url}}" alt="{{artist.name}}">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{artist.name}}</h4>
+                            <p>Popularidad: {{artist.popularity}}</p>
+                            <p>Seguidores: {{artist.followers.total}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 text-center">
+                    <table class="table-icons">
+                        <tbody>
+                            <tr>
+                                <td>    
+                                    <span uib-tooltip="Ver Detalles" tooltip-placement="top">
+                                        <a ui-sref="artist.top-tracks({ id: artist.id })" class="btn btn-default btn-icon" role="button"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span uib-tooltip="Ver Géneros" tooltip-placement="top">
+                                        <a ng-click="openGenres()" class="btn btn-default btn-icon" role="button"><span class="glyphicon glyphicon-cd"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span uib-tooltip="Abrir en Spotify" tooltip-placement="top">
+                                        <a href="{{artist.external_urls.spotify}}" target="_blank" class="btn btn-default btn-icon" role="button"><span class="glyphicon glyphicon-link"></span></a>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span uib-tooltip="Ver JSON" tooltip-placement="top">
+                                        <a ng-click="openJSON()" class="btn btn-default btn-icon" role="button"><span class="glyphicon glyphicon-console"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
