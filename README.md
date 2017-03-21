@@ -74,6 +74,4 @@ Consideraciones y aclaraciones
 
 ## Instalación
 	
-	npm install
-	bower install
-	gulp prod
+	npm start
